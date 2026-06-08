@@ -1,0 +1,33 @@
+{
+  "name": "git-platform",
+  "version": "0.1.0",
+  "description": "Unified MCP server for GitHub, GitLab, and Bitbucket PR management, pipelines, deployments, and repo operations.",
+  "author": {
+    "name": "deepanscode"
+  },
+  "keywords": [
+    "mcp",
+    "github",
+    "gitlab",
+    "bitbucket",
+    "pull-requests",
+    "pipelines",
+    "git"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Git Platform",
+    "shortDescription": "GitHub, GitLab, and Bitbucket MCP tools",
+    "longDescription": "Git Platform exposes a unified MCP server for detecting the current git host and working with pull requests, merge requests, pipelines, deployments, and repository metadata across GitHub, GitLab, and Bitbucket.",
+    "developerName": "deepanscode",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "List open pull requests for this repository"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "1password",
+  "version": "0.1.0",
+  "description": "Resolve secrets through the 1Password CLI instead of hardcoding tokens, credentials, environment variables, or .env values.",
+  "author": {
+    "name": "deepanscode"
+  },
+  "keywords": [
+    "1password",
+    "op",
+    "secrets",
+    "credentials",
+    "env-vars",
+    "secret-management"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "1Password",
+    "shortDescription": "Use 1Password CLI secret references",
+    "longDescription": "1Password teaches Codex to use op:// secret references, op read, op run --env-file, service accounts, and _CMD environment variable indirection instead of writing plaintext secrets.",
+    "developerName": "deepanscode",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Configure this Bitbucket token using 1Password"
+    ]
+  }
+}

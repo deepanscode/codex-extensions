@@ -1,0 +1,32 @@
+{
+  "name": "clean-architecture",
+  "version": "0.1.0",
+  "description": "Architectural skills for layered backend projects, modular-monolith boundaries, route-derived IDs, and soft-delete-by-default.",
+  "author": {
+    "name": "deepanscode"
+  },
+  "keywords": [
+    "clean-architecture",
+    "ddd",
+    "modular-monolith",
+    "bounded-context",
+    "soft-delete",
+    "rest-api"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Clean Architecture",
+    "shortDescription": "Layered backend architecture skills",
+    "longDescription": "Clean Architecture provides language-agnostic guidance for enforcing inward dependencies, cross-module public contracts, route-derived identifiers, and soft-delete conventions.",
+    "developerName": "deepanscode",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Check this backend change against Clean Architecture boundaries"
+    ]
+  }
+}

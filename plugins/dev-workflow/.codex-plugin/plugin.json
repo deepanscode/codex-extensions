@@ -1,0 +1,34 @@
+{
+  "name": "dev-workflow",
+  "version": "0.1.0",
+  "description": "Universal development workflow skills for branch naming, commit format, migration safety, docs lifecycle, pre-PR review, and ticket-driven branch starts.",
+  "author": {
+    "name": "deepanscode"
+  },
+  "keywords": [
+    "workflow",
+    "git",
+    "adr",
+    "specs",
+    "runbook",
+    "pr-review",
+    "conventional-commits",
+    "branch-naming"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dev Workflow",
+    "shortDescription": "Branch, commit, migration, and PR workflow guidance",
+    "longDescription": "Dev Workflow provides Codex skills for branch naming, commit message conventions, migration safety, documentation lifecycle tasks, and pre-PR checks.",
+    "developerName": "deepanscode",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Review this branch before I open a PR"
+    ]
+  }
+}
