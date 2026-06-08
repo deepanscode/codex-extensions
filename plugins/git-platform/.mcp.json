@@ -2,13 +2,7 @@
   "mcpServers": {
     "git-platform": {
       "command": "npm",
-      "args": ["run", "dev"],
-      "env": {
-        "BITBUCKET_USERNAME": "",
-        "BITBUCKET_TOKEN": "",
-        "BITBUCKET_USERNAME_CMD": "",
-        "BITBUCKET_TOKEN_CMD": ""
-      }
+      "args": ["run", "dev"]
     }
   }
 }
