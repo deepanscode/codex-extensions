@@ -1,0 +1,31 @@
+{
+  "name": "workspace-loader",
+  "version": "0.1.0",
+  "description": "Load workspace context from AGENTS.md so Codex can understand multi-repo projects before working.",
+  "author": {
+    "name": "deepanscode"
+  },
+  "keywords": [
+    "workspace",
+    "agents",
+    "monorepo",
+    "multi-repo",
+    "onboarding",
+    "context"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Workspace Loader",
+    "shortDescription": "Load AGENTS.md workspace context",
+    "longDescription": "Workspace Loader teaches Codex to respond to \"load workspace\" by reading the current workspace AGENTS.md, identifying repositories and project context, and summarizing how to work safely in that workspace.",
+    "developerName": "deepanscode",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Load workspace"
+    ]
+  }
+}
