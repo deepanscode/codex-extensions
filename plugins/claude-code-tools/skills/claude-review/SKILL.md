@@ -7,6 +7,8 @@ description: Use when the user explicitly asks Codex to use Claude Code for code
 
 Run Claude Code as a second-opinion reviewer. Codex stays in review stance and leads with findings.
 
+Use the model and effort shown below unless the user requests an override.
+
 ## Steps
 
 1. Determine the review range:
@@ -15,7 +17,7 @@ Run Claude Code as a second-opinion reviewer. Codex stays in review stance and l
 2. Run:
 
 ```bash
-claude -p "[constructed review prompt]"
+claude --model claude-opus-5-5 --effort high -p "[constructed review prompt]"
 ```
 
 3. Ask Claude Code to return findings grouped by severity with file and line references, plus missing tests and security concerns.

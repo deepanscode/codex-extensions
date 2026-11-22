@@ -7,6 +7,8 @@ description: Use when the user explicitly asks Codex to use Claude Code to write
 
 Use Claude Code to add or improve tests, then run the relevant test suite from Codex.
 
+Use the model and effort shown below unless the user requests an override.
+
 ## Steps
 
 1. Detect the test framework and existing test layout.
@@ -14,7 +16,7 @@ Use Claude Code to add or improve tests, then run the relevant test suite from C
 3. Run:
 
 ```bash
-claude -p "[constructed test-writing prompt]"
+claude --model claude-opus-5-5 --effort high -p "[constructed test-writing prompt]"
 ```
 
 4. Review changed test files with `git diff`.

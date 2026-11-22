@@ -14,6 +14,8 @@ Delegate bug investigation to Claude Code. Default to diagnosis only unless the 
 | Investigate | Claude Code reads code and explains root cause. Codex verifies no files changed. |
 | Fix | Claude Code applies a focused fix. Codex reviews the diff and runs verification. |
 
+Use the model and effort shown below unless the user requests an override.
+
 ## Steps
 
 1. Gather symptoms, reproduction steps, stack traces, recent commits, and likely files.
@@ -22,7 +24,7 @@ Delegate bug investigation to Claude Code. Default to diagnosis only unless the 
 4. Run:
 
 ```bash
-claude -p "[constructed debug prompt]"
+claude --model claude-opus-5-5 --effort high -p "[constructed debug prompt]"
 ```
 
 5. For investigate mode, verify `git diff --stat` is empty.

@@ -7,6 +7,8 @@ description: Use when the user explicitly asks Codex to use Claude Code to imple
 
 Run Claude Code as an implementation delegate, then inspect and verify the resulting changes before reporting back.
 
+Use the model and effort shown below unless the user requests an override.
+
 ## Steps
 
 1. Inspect the project enough to give Claude Code precise boundaries: feature request, relevant files, existing patterns, test command, and constraints.
@@ -14,7 +16,7 @@ Run Claude Code as an implementation delegate, then inspect and verify the resul
 3. Run from the project root:
 
 ```bash
-claude -p "[constructed implementation prompt]"
+claude --model claude-opus-5-5 --effort high -p "[constructed implementation prompt]"
 ```
 
 4. Inspect results:

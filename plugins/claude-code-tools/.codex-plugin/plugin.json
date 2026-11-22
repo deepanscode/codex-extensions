@@ -1,6 +1,6 @@
 {
   "name": "claude-code-tools",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Delegate dev lifecycle tasks from Codex to Claude Code CLI for planning, development, testing, debugging, and review.",
   "author": {
     "name": "deepanscode"

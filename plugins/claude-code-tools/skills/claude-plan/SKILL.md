@@ -11,8 +11,9 @@ Run Claude Code as a read-only planning delegate and return the plan to the user
 
 - CLI: `claude`
 - Permission mode: read-only / no edits. If the installed CLI does not expose an exact read-only flag, instruct Claude in the prompt not to modify files and verify with `git diff`.
-- Model: use the Claude Code default unless the user names one.
 - Depth: default to a thorough plan; ask for a shorter pass only if the user requested quick/low effort.
+
+Use the model and effort shown below unless the user requests an override.
 
 ## Steps
 
@@ -28,7 +29,7 @@ Run Claude Code as a read-only planning delegate and return the plan to the user
 3. Run:
 
 ```bash
-claude -p "[constructed planning prompt]"
+claude --model claude-opus-5-5 --effort high -p "[constructed planning prompt]"
 ```
 
 If this CLI accepts a working-directory flag in the installed version, pass the current project path explicitly. Otherwise run the command from the project root.

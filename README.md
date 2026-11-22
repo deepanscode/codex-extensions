@@ -6,7 +6,8 @@ A local Codex plugin marketplace adapted from `claude-code-extensions`. It inclu
 
 | Plugin | Purpose |
 |---|---|
-| `claude-code-tools` | Ask Codex to delegate planning, implementation, testing, debugging, and review work to the Claude Code CLI. |
+| `claude-code-tools` | Ask Codex to delegate planning, implementation, testing, debugging, and review work to Claude Code using `claude-opus-5-5` at high effort. |
+| `gemini-tools` | Delegate the same five tasks to Antigravity CLI (`agy`) using `gemini-4-neon-high` at high effort. |
 | `git-platform` | MCP server for GitHub, GitLab, and Bitbucket PRs, pipelines, deployments, and repo operations. |
 | `dev-workflow` | Branch naming, commit messages, migration safety, docs/spec/runbook workflows, and pre-PR checks. |
 | `clean-architecture` | Layered backend, modular-monolith, route-derived ID, and soft-delete guidance. |

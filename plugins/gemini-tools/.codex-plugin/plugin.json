@@ -1,0 +1,23 @@
+{
+  "name": "gemini-tools",
+  "version": "1.0.0",
+  "description": "Delegate planning, development, testing, debugging, and code review to Gemini through Antigravity CLI.",
+  "author": {
+    "name": "deepanscode"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Gemini Tools",
+    "shortDescription": "Use Gemini through Antigravity CLI",
+    "developerName": "deepanscode",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Gemini to review this change"
+    ]
+  }
+}
